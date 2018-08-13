@@ -4,37 +4,68 @@
 <head>
     <meta charset="utf-8" />
     <title>Richard Tian | Profile</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link href="style.css" rel="stylesheet" type="text/css">
 </head>
 	
 <body>
 	<nav>
-		<a href=""> Home <a/>
-		<a href="#about"> About Me <a/>
-		<a href="#projects"> Projects <a/>
-		<a href="#languages"> Languages <a/>
-		<a href="resume.pdf"> Resume <a/>
+		<div class="actual_nav">
+			<a href="#home"> Home <a/>
+			<a href="#about"> About Me <a/>
+			<a href="#projects"> Projects <a/>
+			<a href="#languages"> Languages <a/>
+			<a href="resume.pdf"> Resume <a/>
+		</div>
+		<div class="contact">
+			<ul>
+				<li>
+					<a class="a_social" href="mailto:richardyjtian@hotmail.com">
+						<i class="fas fa-envelope fa-lg"></i>
+					</a>
+				</li>
+				<li>
+					<a class="a_social" href="https://github.com/richardyjtian">
+						<i class="fab fa-github-square fa-lg"></i>
+					</a>
+				</li>
+				<li>
+					<a class="a_social" href="https://www.linkedin.com/in/richardyjtian/">
+						<i class="fab fa-linkedin fa-lg"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
 	</nav>
-	<div class="head">
+	<div id="home" class="head">
 		<h1> Richard Tian </h1>
 	</div>
 	<div class="spacer"> </div>
 	<div class="sect sect_about_me">
-		<h2> <a name="about"></a> About me </h2>
+		<h2> <a id="about"></a> About me </h2>
 	</div>
 	<div class="sub_sect">
+		<div class="intro">
+			<p> Just a student looking to make life easier </p>
+			<p> Currently in my third year of studies in computer engineering at the University of British Columbia</p>
+		</div>
 		<img src="images/profile.jpg" height="150" />
 	</div>
 	<div class="sect sect_projects">
-		<h2> <a name="projects"></a> Projects </h2>
+		<h2> <a id="projects"></a> Projects </h2>
 	</div>
 	<div class="sub_sect">
 	</div>
 	<div class="sect sect_languages">
-		<h2> <a name="languages"></a> Languages </h2>
+		<h2> <a id="languages"></a> Languages </h2>
 	</div>
 	<div class="sub_sect">
 	</div>
+	
+	<!-- jQuery CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Smooth Scroll -->
+	<script src="js/smoothscroll.js"></script>
 </body>
 
 </html>

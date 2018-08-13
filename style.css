@@ -5,6 +5,8 @@
 
 h1, h2, h3, h4, h5, h6, p{
 	margin-bottom: 20px;
+	margin-left: 40px;
+	font-family: "Open Sans", sans-serif;
 }
 
 html, body{
@@ -17,21 +19,22 @@ nav{
 	width: 100%;
 	background-color: rgba(0,0,0,.5);
 	z-index: 99;
-	text-align: right;
+	text-align: left;
 }
 
 nav a{
 	color: white;
 	text-decoration: none;
-	padding: 5px 20px;
+	padding: 5px 15px;
 	font-family: "Verdana", sans-serif;
 	font-size: 15px;
 	margin-left: 10px;
 	line-height: 50px;
 }
 
+
 .sect{
-	height: 30%;
+	height: 20%;
 	background-size: cover;
 	background-attachment: fixed;
 }
@@ -39,31 +42,40 @@ nav a{
 	height: 100%;
 	background-size: cover;
 	background-attachment: fixed;
-	background-image: url("images/background.jpg");
+	background-image: url("images/background.jpg"); /*sourced from: https://images7.alphacoders.com/391/391299.jpg*/
 }
 .spacer{
 	height: 5%;
-	background-color: white;
+	background-color: rgb(101, 206, 153);
 }	
 .sect_about_me{
-	background-image: url("images/about_me-back.jpg");
+	background-image: url("images/about_me-back.jpg"); /*sourced from: https://farm5.static.flickr.com/4100/4851998113_8b018b511a_b.jpg*/
 }
 .sect_projects{
-	background-image: url("images/projects-back.jpg");
+	background-image: url("images/projects-back.jpg"); /*sourced from: http://yesofcorsa.com/wp-content/uploads/2017/05/Vancouver-Wallpaper-Download.jpg*/
 }
 .sect_languages{
-	background-image: url("images/languages-back.jpg");
+	background-image: url("images/languages-back.jpg"); /*sourced from: https://www.chicdarling.com/wp-content/uploads/2015/12/bigstock-Science-World-In-Vancouver-Ca-93393425.jpg*/
 }
 .sub_sect{
 	height: 100%;
 	background-color: white;
 }
 
-h1{
-	color: black;
-	font-family: "Verdana", sans-serif;
+.head h1{
+	color: white;
 	font-size: 65px;
 	text-align: center;
-	line-height: 275px;
+	line-height: 450px;
+}
+
+h2{
+	color: white;
+	font-size: 40px;
+	line-height: 160px;
 }
 	
+.intro p{
+	color: black;
+	font-size: 30px;
+}
