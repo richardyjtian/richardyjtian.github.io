@@ -79,6 +79,7 @@ nav i{
 }
 
 .head h1{
+	text-shadow: 2px 2px black;
 	color: white;
 	font-size: 65px;
 	text-align: center;
@@ -86,6 +87,7 @@ nav i{
 }
 
 h2{
+	text-shadow: 2px 2px black;
 	color: white;
 	font-size: 40px;
 	line-height: 160px;
