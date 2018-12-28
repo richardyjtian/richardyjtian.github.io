@@ -10,6 +10,13 @@ h1, h2, h3, h4, h5, h6, p{
 	font-family: "Open Sans", sans-serif;
 }
 
+h6{
+	color: black;
+	font-size: 40px;
+	font-style: bold;
+	vertical-align: top;
+}
+
 p{
 	color: black;
 	font-size: 30px;
@@ -38,7 +45,7 @@ nav a{
 	margin-left: 10px;
 	line-height: 50px;
 }
-/* todo: align right */
+
 nav i{
 	float: right;
 	color: white;
