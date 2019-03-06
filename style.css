@@ -118,8 +118,7 @@ nav i{
 .s_projects img{
 	margin-left: 40px;
 }
-.s_projects video{
-	margin-top: -40px;
+.s_projects iframe{
 	margin-left: 40px;
 }
 .s_projects p{
