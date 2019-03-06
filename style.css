@@ -4,10 +4,30 @@
 	padding: 0;
 }
 
+html, body{
+	height: 100%;
+}
+
 h1, h2, h3, h4, h5, h6, p{
 	margin-bottom: 20px;
 	margin-left: 40px;
+	margin-right: 40px;
 	font-family: "Open Sans", sans-serif;
+}
+
+h1{
+	text-shadow: 2px 2px black;
+	color: white;
+	font-size: 65px;
+	text-align: center;
+	line-height: 450px;
+}
+
+h2{
+	text-shadow: 2px 2px black;
+	color: white;
+	font-size: 40px;
+	line-height: 160px;
 }
 
 h6{
@@ -23,9 +43,6 @@ p{
 	vertical-align: top;
 }
 
-html, body{
-	height: 100%;
-}
 
 nav{
 	position: fixed;
@@ -79,43 +96,40 @@ nav i{
 .sect_skills{
 	background-image: url("images/skills-back.jpg"); /*sourced from: https://www.chicdarling.com/wp-content/uploads/2015/12/bigstock-Science-World-In-Vancouver-Ca-93393425.jpg*/
 }
-.sub_sect{
-	height: 100%;
-	background-color: white;
-	margin-top: 50px;
-}
-
-.head h1{
-	text-shadow: 2px 2px black;
-	color: white;
-	font-size: 65px;
-	text-align: center;
-	line-height: 450px;
-}
-
-h2{
-	text-shadow: 2px 2px black;
-	color: white;
-	font-size: 40px;
-	line-height: 160px;
-}
 
 /* About me */
+.sub_sect{
+	height: 80%;
+}
 .intro img{
+	margin-top: 30px;
 	margin-left: 40px;
 }
+.intro p{
+	margin-top: 20px;
+}
 
+/* Projects */
 .s_projects{
-	height: 250%;
+	height: 350%;
 	background-color: white;
-	margin-top: 50px;
+	margin-top: 40px;
 }
 .s_projects img{
 	margin-left: 40px;
 }
+.s_projects video{
+	margin-top: -40px;
+	margin-left: 40px;
+}
+.s_projects p{
+	margin-top: 5px;
+	
+}
 
+/* Skills */
 .s_skills{
 	height: 50%;
 	background-color: white;
-	margin-top: 50px;
+	margin-top: 40px;
 }
