@@ -15,6 +15,11 @@ h1, h2, h3, h4, h5, h6, p{
 	font-family: "Arial", sans-serif;
 }
 
+a{
+	color: black;
+	text-decoration: none;
+}
+
 h1{
 	text-shadow: 2px 2px black;
 	color: white;
@@ -42,7 +47,6 @@ p{
 	font-size: 30px;
 	vertical-align: top;
 }
-
 
 nav{
 	position: fixed;
@@ -111,7 +115,7 @@ nav i{
 
 /* Projects */
 .s_projects{
-	height: 350%;
+	height: 415%;
 	background-color: white;
 	margin-top: 40px;
 }
@@ -128,7 +132,7 @@ nav i{
 
 /* Skills */
 .s_skills{
-	height: 50%;
+	height: 35%;
 	background-color: white;
 	margin-top: 40px;
 }
