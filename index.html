@@ -7,107 +7,204 @@
 	<!-- Open Sans font -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<!-- Custom CSS -->
-	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
 	<!-- Font Awesome CSS -->
     <link href="css/fontawesome-all.css" rel="stylesheet">
 </head>
 	
 <body>
 	<nav>
-		<div class="actual_nav">
+		<div class="left_nav">
 			<a href="#home"> Home <a/>
 			<a href="#about"> About Me <a/>
 			<a href="#projects"> Projects <a/>
 			<a href="#skills"> Skills <a/>
-			<a href="resume.pdf"> Resume <a/>
-			<a class="a_social" href="https://www.linkedin.com/in/richardyjtian/">
+			<a href="resume.pdf"> Resume <a/>		
+		</div>
+		<div class="right_nav">
+			<a href="https://www.linkedin.com/in/richardyjtian/">
 				<i class="fab fa-linkedin fa-lg"></i>
 			</a>
-			<a class="a_social" href="https://github.com/richardyjtian">
+			<a href="https://github.com/richardyjtian">
 				<i class="fab fa-github-square fa-lg"></i>
 			</a>
-			<a class="a_social" href="mailto:richardyjtian@hotmail.com">
+			<a href="mailto:richardyjtian@hotmail.com">
 				<i class="fas fa-envelope fa-lg"></i>
 			</a>
 		</div>
 	</nav>
-	<div id="home" class="head">
+	
+	<div class="home">
+		<a id="home"></a>
 		<h1> Richard Tian </h1>
 	</div>
-	<div class="spacer"> </div>
-	<div class="sect sect_about_me">
-		<h2> <a id="about"></a> About me </h2>
+	
+	<div class="spacer"></div>
+	
+	<div class="about section_header">
+		<a id="about"></a>
+		<h2> About Me </h2>
 	</div>
-	<div class="sub_sect">
-		<div class="intro">
-			<img src="images/profile.jpg" height="300" />
-			<p> Just a student looking to make life easier through software and hardware solutions. 
-				<br>I am in my fourth year of studies in Computer Engineering at the University of British Columbia, and I am currently on exchange at the University of Washington.
-				<br>Read more about me <a href="https://jsis.washington.edu/canada/people/richard-tian/">here</a>!
+	<div class="about section_body">
+		<div class="left_subsection">
+			<img class="profile" src="images/profile.jpeg" height="350" />
+		</div>
+		<div class="right_subsection">
+			<p> I am a fourth year Computer Engineering student at the University of British Columbia, 
+				and I just finished an exchange at the University of Washington. 
+			<br><br> I love to problem solve and develop software and hardware solutions that simplify life. 
+			<br><br> Read more about me on the University of Washington's blog 
+			<a href="https://jsis.washington.edu/canada/people/richard-tian/">here</a>!
 			</p>
 		</div>
 	</div>
-	<div class="sect sect_projects">
-		<h2> <a id="projects"></a> Projects </h2>
+	
+	<div class="projects section_header">
+		<a id="projects"></a>
+		<h2> Projects </h2>
 	</div>
-	<div class="s_projects">
-		<h6> <a href="https://github.com/richardyjtian/Pong"> Pong </a> </h6>
-		<iframe width="420" height="315" allowfullscreen="allowfullscreen"
-			src="https://www.youtube.com/embed/U9hZ-TE62So">
-		</iframe>
-		<p> An Android App designed to play Pong with a microcontroller </p>
-		<hr>
-		<p></p>
+	<div class="projects section_body">
+		<!-- Note: All images must be 240 x 426 -->
+		<div class="subsection">
+			<div class="left_subsection">
+				<h6> <a href="https://github.com/richardyjtian/hacapac"> Hac-A-Pac </a> </h6>
+				<br>
+				<p> A Pac-Man themed, build-your-own-level video game built in Unity and 
+					designed with features for children with disabilities </p>
+				<br>
+				<p> March 2020 - June 2020 </p>
+			</div>
+			<div class="right_subsection">
+				<a href="https://github.com/richardyjtian/hacapac">
+					<img src="images/projects/hac_a_pac.PNG" height="240" width="426"/>
+				</a>
+			</div>
+		</div>
 		
-		<h6> <a href="https://github.com/richardyjtian/BusTexter"> Vancouver Translink Bus Texting App </a> </h6>
-		<a href="https://github.com/richardyjtian/BusTexter">
-			<img src="images/bus_text/1.png" height="300"/>
-		</a>
-		<p> An Android App designed to automate the process of checking bus arrival times at a bus stop </p>
 		<hr>
-		<p></p>
+	
+		<div class="subsection">
+			<div class="left_subsection">
+				<h6> <a href="https://github.com/richardyjtian/pong"> Pong </a> </h6>
+				<br>
+				<p> An Android app designed to play the video game Pong with a microcontroller </p>
+				<br>
+				<p> November 2019 - December 2019 </p>
+			</div>
+			<div class="right_subsection">
+				<iframe src="https://www.youtube.com/embed/RjmbvauhyYQ" height="240" width="426" 
+					allowfullscreen="allowfullscreen"></iframe>
+			</div>
+		</div>
 		
-		<h6> <a href="https://github.com/richardyjtian/Store-Wayfinder"> Store Wayfinder </a> </h6>
-		<iframe width="420" height="315" allowfullscreen="allowfullscreen"
-			src="https://www.youtube.com/embed/wQK-v7ltWvw">
-		</iframe>
-		<p> An embedded system designed to help customers navigate an unfamiliar store </p>
 		<hr>
-		<p></p>
 		
-		<h6> <a href="https://github.com/richardyjtian/TicTalk"> TicTalk </a> </h6>
-		<a href="https://github.com/richardyjtian/TicTalk">
-			<img src="images/tictalk/1.PNG" height="300"/>
-		</a>
-		<p> A React web application designed to allow users to practice speaking English with an AI bot </p>
+		<div class="subsection">
+			<div class="left_subsection">
+				<h6> <a href="https://github.com/richardyjtian/translink-bus-texting-app"> Translink Bus Texting App </a> </h6>
+				<br>
+				<p> An Android app designed to automate checking next bus arrival times at a bus stop </p>
+				<br>
+				<p> July 2018 – August 2019 </p>
+			</div>
+			<div class="right_subsection">
+				<a href="https://github.com/richardyjtian/translink-bus-texting-app">
+					<img src="images/projects/bus_texter.png" height="240" width="426"/>
+				</a>
+			</div>
+		</div>
+		
 		<hr>
-		<p></p>
 		
-		<h6> <a href="https://github.com/richardyjtian/Smart-Lock"> Smart Locker </a> </h6>
-		<a href="https://github.com/richardyjtian/Smart-Lock">
-			<img src="images/lock/2.png" height="300"/>
-			<img src="images/lock/3.png" height="300"/>
-			<img src="images/lock/4.png" height="300"/>
-			<img src="images/lock/5.png" height="300"/>
-		</a>
-		<p> A distributed system designed to enable quick and secure access to a smart locker </p>
+		<div class="subsection">
+			<div class="left_subsection">
+				<h6> <a href="https://github.com/richardyjtian/memory-frame"> Memory Frame </a> </h6>
+				<br>
+				<p> A cloud based, smart photo frame that uses voice activation and pairs with an Android app </p>
+				<br>
+				<p> March 2019 - April 2019 </p>
+			</div>
+			<div class="right_subsection">
+				<iframe src="https://www.youtube.com/embed/BB-_Ch0lU0Y" height="240" width="426"
+					allowfullscreen="allowfullscreen"></iframe>
+			</div>
+		</div>
+		
 		<hr>
-		<p></p>
 		
-		<h6> <a href="https://github.com/richardyjtian/Robot-School-Project"> Autonomous Robot </a> </h6>
-		<a href="https://github.com/richardyjtian/Robot-School-Project">
-			<img src="images/robot/1.png" height="300"/>
-			<img src="images/robot/2.png" height="300"/>
-			<img src="images/robot/3.png" height="300"/>
-		</a>
-		<p> An Arduino robot designed to perform self-driving, follow a designated path, and write words </p>
+		<div class="subsection">
+			<div class="left_subsection">
+				<h6> <a href="https://github.com/richardyjtian/store-wayfinder"> Store Wayfinder </a> </h6>
+				<br>
+				<p> An embedded system designed to help customers navigate an unfamiliar store </p>
+				<br>
+				<p> January 2019 – March 2019 </p>
+			</div>
+			<div class="right_subsection">
+				<iframe src="https://www.youtube.com/embed/2Xnb5OdOCnI" height="240" width="426"
+					allowfullscreen="allowfullscreen"></iframe>
+			</div>
+		</div>
+		
+		<hr>
+		
+		<div class="subsection">
+			<div class="left_subsection">
+				<h6> <a href="https://github.com/richardyjtian/tictalk"> TicTalk </a> </h6>
+				<br>
+				<p> A React web app designed to allow users to practice speaking English with an AI chatbot </p>
+				<br>
+				<p> January 2019 </p>
+			</div>
+			<div class="right_subsection">
+				<a href="https://github.com/richardyjtian/tictalk">
+					<img src="images/projects/tictalk.PNG" height="240" width="426"/>
+				</a>
+			</div>
+		</div>
+		
+		<hr>
+		
+		<div class="subsection">
+			<div class="left_subsection">
+				<h6> <a href="https://github.com/richardyjtian/smart-locker"> Smart Locker </a> </h6>
+				<br>
+				<p> A distributed system designed to enable quick and secure access to a smart locker </p>
+				<br>
+				<p> March 2018 – April 2018 </p>
+			</div>
+			<div class="right_subsection">
+				<a href="https://github.com/richardyjtian/smart-locker">
+					<img src="images/projects/smart_locker.PNG" height="240" width="426"/>
+				</a>
+			</div>
+		</div>
+		
+		<hr>
+		
+		<div class="subsection">
+			<div class="left_subsection">
+				<h6> <a href="https://github.com/richardyjtian/autonomous-robot"> Autonomous Robot </a> </h6>
+				<br>
+				<p> An Arduino robot designed to self-drive, follow a path, or write words </p>
+				<br>
+				<p> February 2018 – March 2018 </p>
+			</div>
+			<div class="right_subsection">
+				<a href="https://github.com/richardyjtian/autonomous-robot">
+					<img src="images/projects/autonomous_robot.PNG" height="240" width="426"/>
+				</a>
+			</div>
+		</div>
 	</div>
-	<div class="sect sect_skills">
-		<h2> <a id="skills"></a> Skills </h2>
+	
+	<div class="skills section_header">
+		<a id="skills"></a>
+		<h2> Skills </h2>
 	</div>
-	<div class="s_skills">
-		<p> <b>Languages:</b> Java, Python, C, C++, SQL, HTML, CSS, JavaScript, JSON, XML, Verilog, ARM Assembly, X86 Assembly
-			</br><b>Software:</b> React, Eclipse, Android Studio, Atom, Microsoft Visual Studio, Vim, Git, IAR Workbench
+	<div class="skills section_body">
+		<p> <b>Languages:</b> Python, C, C++, C#, Java, SQL, HTML, CSS, JavaScript, JSON, XML, Verilog, ARM Assembly, X86 Assembly
+			</br><b>Software:</b> Unity3D, Microsoft Visual Studio, Eclipse, Android Studio, Atom, Git, Vim, IAR Workbench, React
 			</br><b>Operating Systems:</b> Linux, Windows, MacOS, Free-RTOS
 			</br><b>Microcontrollers:</b> Raspberry Pi, Arduino, ARM Cortex-M
 			</br><b>Equipment:</b> Oscilloscope, Multimeter, Signal Generator, Soldering Iron

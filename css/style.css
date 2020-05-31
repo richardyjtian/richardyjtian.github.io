@@ -1,0 +1,147 @@
+/*TODO: ADD SHADOWS TO WHITE TEXT*/
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html, body{
+	height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p, a{
+	font-family: "Arial", sans-serif;
+}
+
+/* Top Navbar */
+nav{
+	position: fixed;
+	height: 50px;
+	width: 100%;
+	background-color: rgba(0,0,0,.5);
+	z-index: 99;
+}
+
+.left_nav{
+	width: 68%;
+	margin-left: 2%;
+	float: left;
+}
+
+.left_nav a{
+	font-size: 18px;
+	color: white;
+	text-decoration: none;
+	text-align: left;
+	padding: 5px 15px;
+	margin-left: 5px;
+	line-height: 50px;
+}
+
+.right_nav{
+	width: 30%;
+	float: right;
+}
+
+.right_nav i{
+	font-size: 40px;
+	color: white;
+	float: right;
+	padding: 1px 15px;
+	margin-right: 10px;
+	line-height: 50px;
+}
+
+.home{
+	height: 100%;
+	background-size: cover;
+	background-attachment: fixed;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+		url("../images/backgrounds/home.jpg"); /*sourced from: https://images7.alphacoders.com/391/391299.jpg*/
+}
+.home h1{
+	font-size: 65px;
+	color: white;
+	text-shadow: 2px 2px black;
+	text-align: center;
+	padding-top: 160px;
+}
+
+.spacer{
+	height: 1%;
+	background-color: whitesmoke;
+}	
+.section_header{
+	height: 20%;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.section_header h2{
+	font-size: 40px;
+	color: white;
+	text-shadow: 2px 2px black;
+	padding-top: 60px;
+	margin-left: 40px;
+}
+
+.about.section_header{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+		url("../images/backgrounds/about_me.jpg"); /*sourced from: https://farm5.static.flickr.com/4100/4851998113_8b018b511a_b.jpg*/
+}
+.projects.section_header{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+		url("../images/backgrounds/projects.jpg"); /*sourced from: http://yesofcorsa.com/wp-content/uploads/2017/05/Vancouver-Wallpaper-Download.jpg*/
+}
+.skills.section_header{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+		url("../images/backgrounds/skills.jpg"); /*sourced from: https://www.chicdarling.com/wp-content/uploads/2015/12/bigstock-Science-World-In-Vancouver-Ca-93393425.jpg*/
+}
+
+.section_body{
+	overflow: auto;
+	background-color: whitesmoke;
+}
+
+.about.section_body, 
+.skills.section_body{
+	overflow: auto;
+	padding: 20px 40px;
+}
+
+.section_body p{
+	font-size: 30px;
+	color: black;
+}
+
+.section_body h6, h6 a{
+	font-size: 40px;
+	color: black;
+	font-style: bold;
+	text-decoration: none;
+}
+
+.profile{
+	border-radius: 50%;
+}
+
+.subsection{
+	height: 240px;
+	padding: 20px 40px;
+}
+
+.left_subsection{
+	width: 50%;
+	float: left;
+}
+
+.right_subsection{
+	width: 50%;
+	float: right;
+}
+
+.right_subsection img,
+.right_subsection iframe{
+	display: block;
+    margin: 0 auto;
+}
