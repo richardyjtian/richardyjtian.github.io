@@ -57,7 +57,7 @@ nav{
 	background-size: cover;
 	background-attachment: fixed;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-		url("../images/backgrounds/home.jpg"); /*sourced from: https://images7.alphacoders.com/391/391299.jpg*/
+		url("../images/backgrounds/home.jpg"); /*source: https://wall.alphacoders.com/big.php?i=391299 */
 }
 .home h1{
 	font-size: 65px;
@@ -87,26 +87,24 @@ nav{
 
 .about.section_header{
 	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-		url("../images/backgrounds/about_me.jpg"); /*sourced from: https://farm5.static.flickr.com/4100/4851998113_8b018b511a_b.jpg*/
+		url("../images/backgrounds/about.jpg"); /*source: https://www.needpix.com/photo/934820/bc-beautiful-bridge-british-columbia-buildings-burrard-burrard-inlet-can-canada */
+}
+.experience.section_header{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+		url("../images/backgrounds/experience.jpg"); /*source: https://www.flickr.com/photos/time-to-look/47483033702 */
 }
 .projects.section_header{
 	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-		url("../images/backgrounds/projects.jpg"); /*sourced from: http://yesofcorsa.com/wp-content/uploads/2017/05/Vancouver-Wallpaper-Download.jpg*/
+		url("../images/backgrounds/projects.jpg"); /*source: https://photovancouver.com/photos/reflections-in-coal-harbour */
 }
 .skills.section_header{
 	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-		url("../images/backgrounds/skills.jpg"); /*sourced from: https://www.chicdarling.com/wp-content/uploads/2015/12/bigstock-Science-World-In-Vancouver-Ca-93393425.jpg*/
+		url("../images/backgrounds/skills.jpg"); /*source: https://www.dreamstime.com/editorial-photo-science-world-vancouver-canada-bc-olympic-place-illuminated-night-image55486761 */
 }
 
 .section_body{
 	overflow: auto;
 	background-color: whitesmoke;
-}
-
-.about.section_body, 
-.skills.section_body{
-	overflow: auto;
-	padding: 20px 40px;
 }
 
 .section_body p{
@@ -121,13 +119,27 @@ nav{
 	text-decoration: none;
 }
 
-.profile{
-	border-radius: 50%;
-}
-
 .subsection{
 	height: 240px;
 	padding: 20px 40px;
+}
+
+.left_subsection{
+	float: left;
+}
+
+.right_subsection{
+	float: right;
+}
+
+
+.about.section_body, 
+.skills.section_body{
+	overflow: auto;
+	padding: 20px 40px;
+}
+.profile{
+	border-radius: 50%;
 }
 
 .left_subsection{
@@ -136,12 +148,7 @@ nav{
 }
 
 .right_subsection{
-	width: 50%;
+	/* width: 50%; */
 	float: right;
 }
 
-.right_subsection img,
-.right_subsection iframe{
-	display: block;
-    margin: 0 auto;
-}
