@@ -1,18 +1,13 @@
-/*TODO: ADD SHADOWS TO WHITE TEXT*/
-
 *{
 	margin: 0;
 	padding: 0;
 }
-
 html, body{
 	height: 100%;
 }
-
 h1, h2, h3, h4, h5, h6, p, a{
 	font-family: "Arial", sans-serif;
 }
-
 /* Top Navbar */
 nav{
 	position: fixed;
@@ -21,13 +16,11 @@ nav{
 	background-color: rgba(0,0,0,.5);
 	z-index: 99;
 }
-
 .left_nav{
 	width: 68%;
 	margin-left: 2%;
 	float: left;
 }
-
 .left_nav a{
 	font-size: 18px;
 	color: white;
@@ -37,12 +30,10 @@ nav{
 	margin-left: 5px;
 	line-height: 50px;
 }
-
 .right_nav{
 	width: 30%;
 	float: right;
 }
-
 .right_nav i{
 	font-size: 40px;
 	color: white;
@@ -51,7 +42,7 @@ nav{
 	margin-right: 10px;
 	line-height: 50px;
 }
-
+/* Home */
 .home{
 	height: 100%;
 	background-size: cover;
@@ -66,17 +57,16 @@ nav{
 	text-align: center;
 	padding-top: 160px;
 }
-
 .spacer{
 	height: 1%;
 	background-color: whitesmoke;
-}	
+}
+/* Section */
 .section_header{
 	height: 20%;
 	background-size: cover;
 	background-attachment: fixed;
 }
-
 .section_header h2{
 	font-size: 40px;
 	color: white;
@@ -84,7 +74,6 @@ nav{
 	padding-top: 60px;
 	margin-left: 40px;
 }
-
 .about.section_header{
 	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
 		url("../images/backgrounds/about.jpg"); /*source: https://www.needpix.com/photo/934820/bc-beautiful-bridge-british-columbia-buildings-burrard-burrard-inlet-can-canada */
@@ -101,54 +90,62 @@ nav{
 	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
 		url("../images/backgrounds/skills.jpg"); /*source: https://www.dreamstime.com/editorial-photo-science-world-vancouver-canada-bc-olympic-place-illuminated-night-image55486761 */
 }
-
 .section_body{
 	overflow: auto;
 	background-color: whitesmoke;
 }
-
-.section_body p{
-	font-size: 30px;
-	color: black;
-}
-
-.section_body h6, h6 a{
+.section_body h3, h3 a{
 	font-size: 40px;
 	color: black;
 	font-style: bold;
 	text-decoration: none;
 }
-
+.section_body h4{
+	font-size: 30px;
+	color: black;
+	font-weight: normal;
+	font-style: italic;
+}
+.section_body p{
+	font-size: 30px;
+	color: black;
+}
+/* Subsection */
 .subsection{
-	height: 240px;
+	overflow: auto;
 	padding: 20px 40px;
 }
-
 .left_subsection{
 	float: left;
 }
-
 .right_subsection{
 	float: right;
 }
-
-
-.about.section_body, 
-.skills.section_body{
-	overflow: auto;
-	padding: 20px 40px;
+/* Section specific */
+.about .left_subsection,
+.about .right_subsection{
+	width: 50%;
 }
 .profile{
 	border-radius: 50%;
 }
-
-.left_subsection{
-	width: 50%;
-	float: left;
-}
-
-.right_subsection{
-	/* width: 50%; */
+.date{
 	float: right;
 }
-
+.experience .left_subsection{
+	width: 68%;
+}
+.projects .left_subsection{
+	width: 60%;
+}
+.projects .left_subsection img{
+	vertical-align: top;
+}
+.skills .icons{
+	padding: 20px 0px;
+    text-align:center;
+}
+.skills .icon{
+    margin:0px 10px;
+    display:inline-block;
+}
