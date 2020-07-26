@@ -39,11 +39,14 @@ nav {
 	float: left;
 }
 .left_nav a {
+	margin-left: 5px;
+}
+.left_nav a,
+.right_nav .resume {
 	font-size: 18px;
 	color: white;
 	text-decoration: none;
 	padding: 5px 15px;
-	margin-left: 5px;
 	line-height: 50px;
 }
 .right_nav {
@@ -55,15 +58,6 @@ nav {
 	color: white;
 	float: right;
 	padding: 1px 15px;
-	margin-right: 10px;
-	line-height: 50px;
-}
-.right_nav .resume {
-	font-size: 18px;
-	color: white;
-	text-decoration: none;
-	padding: 5px 15px;
-	margin-right: 10px;
 	line-height: 50px;
 }
 /*------------------------------------*\
@@ -194,17 +188,13 @@ nav {
   #EXPERIENCE/PROJECTS-SECTION
 \*------------------------------------*/
 @media screen and (max-width: 1224px) {
-	.experience .left_subsection,
-	.projects .left_subsection {
-		width: 90%;
-	}
 	.experience .right_subsection,
 	.projects .right_subsection {
 		float: left;
 		padding-left: 20px;
 	}
 	.date {
-		padding-top: 20px;
+		clear: both;
 		padding-left: 20px;
 	}
 }
@@ -221,6 +211,13 @@ nav {
 }
 .projects .left_subsection img {
 	vertical-align: top;
+}
+.projects .right_subsection img,
+.projects .right_subsection iframe {
+    width: 80vh;
+    height: 80vh;
+	max-height: 240px;
+	max-width: 426px;
 }
 /*------------------------------------*\
   #SKILLS-SECTION
