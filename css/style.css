@@ -14,15 +14,27 @@ h1, h2, h3, h4, h5, h6, p, a {
 /*------------------------------------*\
   #TOP-NAVBAR
 \*------------------------------------*/
+@media screen and (max-width: 912px) {
+	.desktop {
+        display: none !important;
+    }
+}
+@media screen and (min-width: 913px) {
+	.left_nav {
+		width: 58%;
+	}
+	.right_nav {
+		width: 40%;
+	}
+}
 nav {
 	position: fixed;
 	height: 50px;
 	width: 100%;
-	background-color: rgba(0,0,0,.5);
+	background-color: rgba(0, 0, 0, 0.5);
 	z-index: 99;
 }
 .left_nav {
-	width: 68%;
 	margin-left: 2%;
 	float: left;
 }
@@ -30,14 +42,13 @@ nav {
 	font-size: 18px;
 	color: white;
 	text-decoration: none;
-	text-align: left;
 	padding: 5px 15px;
 	margin-left: 5px;
 	line-height: 50px;
 }
 .right_nav {
-	width: 30%;
 	float: right;
+	text-align: right;
 }
 .right_nav i {
 	font-size: 40px;
@@ -47,24 +58,27 @@ nav {
 	margin-right: 10px;
 	line-height: 50px;
 }
+.right_nav .resume {
+	font-size: 18px;
+	color: white;
+	text-decoration: none;
+	padding: 5px 15px;
+	margin-right: 10px;
+	line-height: 50px;
+}
 /*------------------------------------*\
   #HOME
 \*------------------------------------*/
-@media screen and (max-width: 768px) {
-	.home {
-		height: 100%;
-		background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-			url("../images/backgrounds/home.jpg"); /*source: https://wall.alphacoders.com/big.php?i=391299 */
-	}
-}
 @media screen and (min-width: 769px) {
 	.home {
-		height: 100%;
-		background-size: cover;
 		background-attachment: fixed;
-		background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-			url("../images/backgrounds/home.jpg"); /*source: https://wall.alphacoders.com/big.php?i=391299 */
 	}
+}
+.home {
+	height: 100%;
+	background-size: cover;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+		url("../images/backgrounds/home.jpg"); /*source: https://wall.alphacoders.com/big.php?i=391299 */
 }
 .home h1 {
 	font-size: 65px;
@@ -80,17 +94,14 @@ nav {
 /*------------------------------------*\
   #SECTION
 \*------------------------------------*/
+@media screen and (min-width: 769px) {
+	.section_header {
+		background-attachment: fixed;
+	}
+}
 .section_header {
 	height: 20%;
 	background-size: cover;
-	background-attachment: fixed;
-}
-.section_header h2 {
-	font-size: 40px;
-	color: white;
-	text-shadow: 2px 2px black;
-	padding-top: 60px;
-	margin-left: 40px;
 }
 .about.section_header {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
@@ -107,6 +118,13 @@ nav {
 .skills.section_header {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
 		url("../images/backgrounds/skills.jpg"); /*source: https://www.dreamstime.com/editorial-photo-science-world-vancouver-canada-bc-olympic-place-illuminated-night-image55486761 */
+}
+.section_header h2 {
+	font-size: 40px;
+	color: white;
+	text-shadow: 2px 2px black;
+	padding-top: 60px;
+	margin-left: 40px;
 }
 .section_body {
 	overflow: auto;
@@ -149,6 +167,8 @@ nav {
 	width: 50%;
 }
 .profile {
+	max-width:100%;
+	max-height:100%;
 	border-radius: 50%;
 }
 .date {
@@ -170,4 +190,14 @@ nav {
 .skills .icon {
     margin: 0px 10px;
     display: inline-block;
+}
+.skills ul {
+	padding-left: 20px;
+}
+.skills .left_subsection {
+	width: 45%;
+}
+.skills .right_subsection {
+	margin-left: 5%;
+	width: 50%;
 }
