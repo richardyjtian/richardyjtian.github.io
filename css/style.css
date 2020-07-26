@@ -50,14 +50,14 @@ nav {
 /*------------------------------------*\
   #HOME
 \*------------------------------------*/
-@media screen and (max-width: 629px) {
+@media screen and (max-width: 1024px) {
 	.home {
 		height: 100%;
 		background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
 			url("../images/backgrounds/home.jpg"); /*source: https://wall.alphacoders.com/big.php?i=391299 */
 	}
 }
-@media screen and (min-width: 630px) {
+@media screen and (min-width: 1025px) {
 	.home {
 		height: 100%;
 		background-size: cover;
