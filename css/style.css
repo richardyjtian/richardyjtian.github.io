@@ -1,27 +1,32 @@
-*{
+/*------------------------------------*\
+  #ALL
+\*------------------------------------*/
+* {
 	margin: 0;
 	padding: 0;
 }
-html, body{
+html, body {
 	height: 100%;
 }
-h1, h2, h3, h4, h5, h6, p, a{
+h1, h2, h3, h4, h5, h6, p, a {
 	font-family: "Arial", sans-serif;
 }
-/* Top Navbar */
-nav{
+/*------------------------------------*\
+  #TOP-NAVBAR
+\*------------------------------------*/
+nav {
 	position: fixed;
 	height: 50px;
 	width: 100%;
 	background-color: rgba(0,0,0,.5);
 	z-index: 99;
 }
-.left_nav{
+.left_nav {
 	width: 68%;
 	margin-left: 2%;
 	float: left;
 }
-.left_nav a{
+.left_nav a {
 	font-size: 18px;
 	color: white;
 	text-decoration: none;
@@ -30,11 +35,11 @@ nav{
 	margin-left: 5px;
 	line-height: 50px;
 }
-.right_nav{
+.right_nav {
 	width: 30%;
 	float: right;
 }
-.right_nav i{
+.right_nav i {
 	font-size: 40px;
 	color: white;
 	float: right;
@@ -42,110 +47,127 @@ nav{
 	margin-right: 10px;
 	line-height: 50px;
 }
-/* Home */
-.home{
-	height: 100%;
-	background-size: cover;
-	background-attachment: fixed;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-		url("../images/backgrounds/home.jpg"); /*source: https://wall.alphacoders.com/big.php?i=391299 */
+/*------------------------------------*\
+  #HOME
+\*------------------------------------*/
+@media screen and (max-width: 629px) {
+	.home {
+		height: 100%;
+		background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+			url("../images/backgrounds/home.jpg"); /*source: https://wall.alphacoders.com/big.php?i=391299 */
+	}
 }
-.home h1{
+@media screen and (min-width: 630px) {
+	.home {
+		height: 100%;
+		background-size: cover;
+		background-attachment: fixed;
+		background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+			url("../images/backgrounds/home.jpg"); /*source: https://wall.alphacoders.com/big.php?i=391299 */
+	}
+}
+.home h1 {
 	font-size: 65px;
 	color: white;
 	text-shadow: 2px 2px black;
 	text-align: center;
 	padding-top: 160px;
 }
-.spacer{
+.spacer {
 	height: 1%;
 	background-color: whitesmoke;
 }
-/* Section */
-.section_header{
+/*------------------------------------*\
+  #SECTION
+\*------------------------------------*/
+.section_header {
 	height: 20%;
 	background-size: cover;
 	background-attachment: fixed;
 }
-.section_header h2{
+.section_header h2 {
 	font-size: 40px;
 	color: white;
 	text-shadow: 2px 2px black;
 	padding-top: 60px;
 	margin-left: 40px;
 }
-.about.section_header{
+.about.section_header {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
 		url("../images/backgrounds/about.jpg"); /*source: https://www.needpix.com/photo/934820/bc-beautiful-bridge-british-columbia-buildings-burrard-burrard-inlet-can-canada */
 }
-.experience.section_header{
+.experience.section_header {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
 		url("../images/backgrounds/experience.jpg"); /*source: https://www.flickr.com/photos/time-to-look/47483033702 */
 }
-.projects.section_header{
+.projects.section_header {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
 		url("../images/backgrounds/projects.jpg"); /*source: https://photovancouver.com/photos/reflections-in-coal-harbour */
 }
-.skills.section_header{
+.skills.section_header {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
 		url("../images/backgrounds/skills.jpg"); /*source: https://www.dreamstime.com/editorial-photo-science-world-vancouver-canada-bc-olympic-place-illuminated-night-image55486761 */
 }
-.section_body{
+.section_body {
 	overflow: auto;
 	background-color: whitesmoke;
 }
-.section_body h3, h3 a{
+.section_body h3, h3 a {
 	font-size: 40px;
 	color: black;
 	font-style: bold;
 	text-decoration: none;
 }
-.section_body h4{
+.section_body h4 {
 	font-size: 30px;
 	color: black;
 	font-weight: normal;
 	font-style: italic;
 }
-.section_body p{
+.section_body p {
 	font-size: 30px;
 	color: black;
 }
-/* Subsection */
-.subsection{
+/*------------------------------------*\
+  #SUBSECTION
+\*------------------------------------*/
+.subsection {
 	overflow: auto;
 	padding: 20px 40px;
 }
-.left_subsection{
+.left_subsection {
 	float: left;
 }
-.right_subsection{
+.right_subsection {
 	float: right;
 }
-/* Section specific */
+/*------------------------------------*\
+  #SECTION-SPECIFIC
+\*------------------------------------*/
 .about .left_subsection,
-.about .right_subsection{
+.about .right_subsection {
 	width: 50%;
 }
-.profile{
+.profile {
 	border-radius: 50%;
 }
-.date{
+.date {
 	float: right;
 }
-.experience .left_subsection{
+.experience .left_subsection {
 	width: 68%;
 }
-.projects .left_subsection{
+.projects .left_subsection {
 	width: 60%;
 }
-.projects .left_subsection img{
+.projects .left_subsection img {
 	vertical-align: top;
 }
-.skills .icons{
+.skills .icons {
 	padding: 20px 0px;
     text-align:center;
 }
-.skills .icon{
-    margin:0px 10px;
-    display:inline-block;
+.skills .icon {
+    margin: 0px 10px;
+    display: inline-block;
 }
