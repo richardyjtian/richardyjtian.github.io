@@ -149,39 +149,95 @@ nav {
 /*------------------------------------*\
   #SUBSECTION
 \*------------------------------------*/
+@media screen and (max-width: 768px) {
+	.left_subsection,
+	.right_subsection {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+@media screen and (min-width: 769px) {
+	.left_subsection {
+		float: left;
+		padding-left: 2%;
+		padding-right: 1%;
+	}
+	.right_subsection {
+		float: right;
+		padding-left: 1%;
+		padding-right: 2%;
+	}
+}
 .subsection {
 	overflow: auto;
-	padding: 20px 40px;
 }
-.left_subsection {
-	float: left;
-}
+.left_subsection,
 .right_subsection {
-	float: right;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 /*------------------------------------*\
-  #SECTION-SPECIFIC
+  #ABOUT-SECTION
 \*------------------------------------*/
-.about .left_subsection,
-.about .right_subsection {
-	width: 50%;
+@media screen and (min-width: 769px) {
+	.about .left_subsection,
+	.about .right_subsection {
+		width: 47%;
+	}
 }
 .profile {
-	max-width:100%;
-	max-height:100%;
+	max-width: 100%;
+	max-height: 100%;
 	border-radius: 50%;
 }
-.date {
-	float: right;
+/*------------------------------------*\
+  #EXPERIENCE/PROJECTS-SECTION
+\*------------------------------------*/
+@media screen and (max-width: 1224px) {
+	.experience .left_subsection,
+	.projects .left_subsection {
+		width: 90%;
+	}
+	.experience .right_subsection,
+	.projects .right_subsection {
+		float: left;
+		padding-left: 20px;
+	}
+	.date {
+		padding-top: 20px;
+		padding-left: 20px;
+	}
 }
-.experience .left_subsection {
-	width: 68%;
-}
-.projects .left_subsection {
-	width: 60%;
+@media screen and (min-width: 1225px) {
+	.experience .left_subsection,
+	.projects .left_subsection {
+		width: 58%;
+	}
+	.date {
+		float: right;
+		padding-top: 20px;
+		padding-right: 2%;
+	}
 }
 .projects .left_subsection img {
 	vertical-align: top;
+}
+/*------------------------------------*\
+  #SKILLS-SECTION
+\*------------------------------------*/
+@media screen and (max-width: 768px) {
+	.skills .subsection{
+		padding: 20px 20px;
+	}
+}
+@media screen and (min-width: 769px) {
+	.skills .subsection{
+		padding: 20px 2%;
+	}
+	.skills .left_subsection,
+	.skills .right_subsection {
+		width: 47%;
+	}
 }
 .skills .icons {
 	padding: 20px 0px;
@@ -193,11 +249,4 @@ nav {
 }
 .skills ul {
 	padding-left: 20px;
-}
-.skills .left_subsection {
-	width: 45%;
-}
-.skills .right_subsection {
-	margin-left: 5%;
-	width: 50%;
 }
