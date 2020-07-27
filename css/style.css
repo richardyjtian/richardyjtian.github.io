@@ -29,8 +29,8 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 nav {
 	position: fixed;
-	height: 50px;
 	width: 100%;
+	height: 50px;
 	background-color: rgba(0, 0, 0, 0.5);
 	z-index: 99;
 }
@@ -158,6 +158,7 @@ nav {
 	}
 	.right_subsection {
 		float: right;
+		padding-top: 20px;
 		padding-left: 1%;
 		padding-right: 2%;
 	}
@@ -165,9 +166,11 @@ nav {
 .subsection {
 	overflow: auto;
 }
-.left_subsection,
-.right_subsection {
+.left_subsection {
 	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.right_subsection {
 	padding-bottom: 20px;
 }
 /*------------------------------------*\
@@ -179,7 +182,7 @@ nav {
 		width: 47%;
 	}
 }
-.profile {
+.about .profile {
 	max-width: 100%;
 	max-height: 100%;
 	border-radius: 50%;
@@ -195,37 +198,31 @@ nav {
 /* } */
 @media screen and (max-width: 1224px) {
 	.experience .left_subsection,
-	.projects .left_subsection,
-	.experience .right_subsection,
-	.projects .right_subsection {
+	.experience .right_subsection {
 		padding-left: 20px;
 		padding-right: 20px;
 	}
-	.experience .right_subsection,
-	.projects .right_subsection {
+	.experience .right_subsection {
 		float: left;
 		width: -webkit-calc(100% - 40px);
 		width:    -moz-calc(100% - 40px);
 		width:         calc(100% - 40px);
-		overflow: hidden;
 		max-height: 360px;
+		overflow: hidden;
 	}
 	.date {
 		clear: both;
-		padding-left: 20px;
-		padding-right: 20px;
+		padding: 0px 20px 20px 20px;
 	}
 	.date p {
 		font-size: 24px;
 	}
 }
 @media screen and (min-width: 1225px) {
-	.experience .left_subsection,
-	.projects .left_subsection {
+	.experience .left_subsection {
 		width: 56%;
 	}
-	.experience .right_subsection,
-	.projects .right_subsection {
+	.experience .right_subsection {
 		width: 38%;
 	}
 	.date {
@@ -234,21 +231,23 @@ nav {
 		padding-right: 2%;
 	}
 }
-.projects .left_subsection img {
+.experience .logo {
 	vertical-align: top;
+	width: 60px;
+	height: 60px;
 }
-.h_iframe {
+.experience .h_iframe {
 	position: relative;
     padding-top: 56.25%;
 }
-.projects .right_subsection img,
-.projects .right_subsection iframe {
+.experience .sample_img,
+.experience iframe {
 	width: 100%;
     height: 100%;
-	max-height: 360px;
 	max-width: 640px;
+	max-height: 360px;
 }
-.projects .right_subsection iframe {
+.experience iframe {
 	position: absolute;
     top: 0;
     left: 0;
@@ -260,6 +259,9 @@ nav {
 @media screen and (max-width: 768px) {
 	.skills .subsection{
 		padding: 20px 20px;
+	}
+	.skills .left_subsection {
+		padding-bottom: 0px;
 	}
 }
 @media screen and (min-width: 769px) {
@@ -278,6 +280,10 @@ nav {
 .skills .icon {
     margin: 0px 10px;
     display: inline-block;
+}
+.skills .logo {
+    width: 110px;
+	height: 110px;
 }
 .skills ul {
 	padding-left: 20px;
