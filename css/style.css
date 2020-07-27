@@ -274,11 +274,11 @@ nav {
 	}
 }
 .skills .icons {
-	padding: 20px 0px;
-    text-align:center;
+	padding: 20px 0px 10px 0px;
+    text-align: center;
 }
 .skills .icon {
-    margin: 0px 10px;
+    margin: 0px 10px 10px 10px;
     display: inline-block;
 }
 .skills .logo {
