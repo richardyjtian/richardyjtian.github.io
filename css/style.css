@@ -187,12 +187,12 @@ nav {
 /*------------------------------------*\
   #EXPERIENCE/PROJECTS-SECTION
 \*------------------------------------*/
-@media screen and (max-width: 768px) {
-	.date span::before {
-		content: "\A"; 
-		white-space: pre; 
-	}
-}
+/* @media screen and (max-width: 768px) { */
+	/* .date span::before { */
+		/* content: "\A";  */
+		/* white-space: pre;  */
+	/* } */
+/* } */
 @media screen and (max-width: 1224px) {
 	.experience .left_subsection,
 	.projects .left_subsection,
@@ -214,6 +214,9 @@ nav {
 		clear: both;
 		padding-left: 20px;
 		padding-right: 20px;
+	}
+	.date p {
+		font-size: 24px;
 	}
 }
 @media screen and (min-width: 1225px) {
