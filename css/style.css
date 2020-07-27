@@ -75,11 +75,11 @@ nav {
 		url("../images/backgrounds/home.jpg"); /*source: https://wall.alphacoders.com/big.php?i=391299 */
 }
 .home h1 {
+	text-align: center;
+	padding-top: 160px;
 	font-size: 65px;
 	color: white;
 	text-shadow: 2px 2px black;
-	text-align: center;
-	padding-top: 160px;
 }
 .spacer {
 	height: 1%;
@@ -94,7 +94,7 @@ nav {
 	}
 }
 .section_header {
-	height: 20%;
+	height: 120px;
 	background-size: cover;
 }
 .about.section_header {
@@ -114,11 +114,11 @@ nav {
 		url("../images/backgrounds/skills.jpg"); /*source: https://www.dreamstime.com/editorial-photo-science-world-vancouver-canada-bc-olympic-place-illuminated-night-image55486761 */
 }
 .section_header h2 {
+	padding-top: 60px;
+	margin-left: 40px;
 	font-size: 40px;
 	color: white;
 	text-shadow: 2px 2px black;
-	padding-top: 60px;
-	margin-left: 40px;
 }
 .section_body {
 	overflow: auto;
