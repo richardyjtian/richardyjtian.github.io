@@ -109,6 +109,10 @@ nav {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
 		url("../images/backgrounds/projects.jpg"); /*source: https://photovancouver.com/photos/reflections-in-coal-harbour */
 }
+.projects.section_header {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+		url("../images/backgrounds/extracurriculars.jpeg"); /*source: https://www.pexels.com/photo/buildings-near-body-of-water-at-night-1519088/ */
+}
 .skills.section_header {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
 		url("../images/backgrounds/skills.jpg"); /*source: https://www.dreamstime.com/editorial-photo-science-world-vancouver-canada-bc-olympic-place-illuminated-night-image55486761 */
