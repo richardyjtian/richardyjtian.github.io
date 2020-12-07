@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 		width: 58%;
 	}
 	.right_nav {
-		width: 40%;
+		width: 38%;
 	}
 }
 nav {
@@ -38,27 +38,55 @@ nav {
 	margin-left: 2%;
 	float: left;
 }
-.left_nav a {
-	margin-left: 5px;
+.right_nav {
+	margin-right: 2%;
+	float: right;
 }
-.left_nav a,
-.right_nav .resume {
+.left_nav ul {
+	justify-content: start;
+}
+.right_nav ul {
+	justify-content: end;
+}
+.right_nav i {
+	font-size: 40px;
+	color: white;
+	vertical-align: middle;
+}
+
+/* Nav list of sections */
+nav ul {
+	display: grid;
+	grid-template-columns: repeat(5, auto);
+	grid-gap: 5px;
+	list-style: none;
+}
+nav li { 
+	display: table-cell; 
+	position: relative; 
+}
+nav a {
 	font-size: 18px;
 	color: white;
 	text-decoration: none;
 	padding: 5px 15px;
 	line-height: 50px;
 }
-.right_nav {
-	float: right;
-	text-align: right;
+nav a:after {    
+	background: none repeat scroll 0 0 transparent;
+	bottom: 0;
+	content: "";
+	display: block;
+	height: 2px;
+	left: 50%;
+	position: absolute;
+	background: white;
+	transition: width 0.3s ease 0s, left 0.3s ease 0s;
+	width: 0;
 }
-.right_nav i {
-	font-size: 40px;
-	color: white;
-	float: right;
-	padding: 1px 15px;
-	line-height: 50px;
+nav a:hover:after { 
+	width: 100%; 
+	left: 0;
 }
 /*------------------------------------*\
   #HOME
